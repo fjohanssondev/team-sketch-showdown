@@ -1,5 +1,6 @@
 import Canvas from '@/components/canvas'
 import Conversation from '@/components/chat/conversation'
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { createFileRoute } from '@tanstack/react-router'
 import { useEffect } from 'react'
@@ -24,9 +25,12 @@ function RouteComponent() {
       <div className='flex-1'>
         <Canvas />
       </div>
-      <div className='w-md bg-neutral-100 border-l border-neutral-400'>
+      <div className='w-md bg-neutral-100 border-l border-neutral-400 px-4 py-6'>
         <Conversation messages={["asd"]} />
-        <Input />
+        <div className='flex items-center space-x-2 mt-4'>
+          <Input placeholder='Skriv ett meddelande...' />
+          <Button>Skicka</Button>
+        </div>
       </div>
     </div>
   )

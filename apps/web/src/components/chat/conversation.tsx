@@ -7,7 +7,7 @@ interface ConversationProps {
 export default function Conversation({ messages }: ConversationProps){
   return (
     <section>
-      <div className="flex flex-col space-y-4 px-4 py-6">
+      <div className="flex flex-col space-y-4">
         <Message text="Hej" />
         <Message text="Hej" />
         <Message text="Hej" />
